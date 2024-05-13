@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<Layout>
 			<section>
-				<h1>HOME</h1>
+				<h1>Home</h1>
 				<p>Hey! I'm Bo a Web Developer based in the West Midlands, UK.</p>
 			</section>
 		</Layout>
