@@ -5,8 +5,7 @@ export default function NotFound() {
 	return (
 		<Layout>
 			<div>
-				<h1>404</h1>
-				<p>Sorry, this page does not exist!</p>
+				<img src="404-error-bro-yellow.svg" alt="404 Error" />
 			</div>
 		</Layout>
 	);
