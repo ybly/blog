@@ -9,6 +9,9 @@ export default function Navbar() {
 				<Link to="/">Home</Link>
 				<Link to="/about">About</Link>
 				<Link to="/projects">Projects</Link>
+				<a target="_blank" href="https://github.com/ybly">
+					Github
+				</a>
 			</div>
 		</nav>
 	);
