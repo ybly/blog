@@ -10,6 +10,12 @@
 module.exports = {
 	plugins: [
 		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				icon: `src/images/icons8-dev.svg`,
+			},
+		},
+		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				// Footnotes mode (default: true)
