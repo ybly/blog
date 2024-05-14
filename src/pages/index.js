@@ -9,12 +9,34 @@ export default function Home() {
 		<Layout>
 			<section className={styles.header}>
 				<div>
-					<h2>Home</h2>
-					<h3>Web Developer</h3>
-					<p>Hey! I'm Bo a Web Developer based in the West Midlands, UK.</p>
+					<h2>Hey, I'm Bo</h2>
+					<p>
+						Welcome to my digital playground! I'm a UK-based software developer,
+						and this is where I share my projects and what I've learnt.
+					</p>
+				</div>
 
-					<Link to="/projects" className={styles.btn}>
-						My Projects
+				<img
+					src="coding-bro-yellow.svg"
+					alt="logo"
+					style={{ maxWidth: '100%' }}
+				/>
+			</section>
+
+			<section>
+				<div className={styles.heading}>
+					<h2>Latest Posts</h2>
+					<Link to="/projects" className={styles.button}>
+						View All
+					</Link>
+				</div>
+			</section>
+
+			<section>
+				<div className={styles.heading}>
+					<h2>Projects</h2>
+					<Link to="/projects" className={styles.button}>
+						View All
 					</Link>
 				</div>
 			</section>
