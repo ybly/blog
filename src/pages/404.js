@@ -6,7 +6,7 @@ export default function NotFound() {
 		<PageLayout>
 			<div>
 				<img
-					src="404-error-bro-yellow.svg"
+					src="/404-error.svg"
 					alt="404 Error"
 					style={{ maxWidth: '100%' }}
 				/>
