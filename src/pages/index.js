@@ -1,45 +1,68 @@
 import * as React from 'react';
 import PageLayout from '../components/PageLayout';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 
 import * as styles from '../styles/home.module.css';
 
-export default function Home() {
+export default function Home({ data }) {
+	console.log(data);
+
+	const projects = data.allMarkdownRemark.nodes;
+
 	return (
 		<PageLayout>
 			<section className={styles.header}>
 				<div>
-					<h2>Hey, I'm Bo</h2>
-					<p>
+					<h1>Hey, I'm Bo</h1>
+					<p className={styles.header}>
 						Welcome to my digital playground! I'm a UK-based software developer,
 						and this is where I share my projects and what I've learnt.
 					</p>
 				</div>
 
-				<img
-					src="coding-bro-yellow.svg"
-					alt="logo"
-					style={{ maxWidth: '100%' }}
-				/>
+				<img src="/header-image.svg" alt="logo" style={{ maxWidth: '100%' }} />
 			</section>
 
 			<section>
-				<div className={styles.heading}>
-					<h2>Latest Posts</h2>
+				<div className={styles.homeHeading}>
+					<h2 className="title">Latest Projects</h2>
 					<Link to="/projects" className="button">
 						View All
 					</Link>
 				</div>
-			</section>
-
-			<section>
-				<div className={styles.heading}>
-					<h2>Projects</h2>
-					<Link to="/projects" className="button">
-						View All
-					</Link>
+				<div className={styles.projectList}>
+					{projects.map((project) => (
+						<Link
+							className={styles.projectItem}
+							key={project.id}
+							to={'/projects/' + project.frontmatter.path}
+						>
+							<h3>{project.frontmatter.description}</h3>
+							<span className={styles.projectDate}>
+								{String(project.frontmatter.date).substring(0, 4)}
+							</span>
+						</Link>
+					))}
 				</div>
 			</section>
 		</PageLayout>
 	);
 }
+
+export const getProjects = graphql`
+	query projectsQuery {
+		allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 6) {
+			nodes {
+				frontmatter {
+					title
+					stack
+					path
+					githubRepo
+					description
+					date
+				}
+				id
+			}
+		}
+	}
+`;

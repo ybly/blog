@@ -1,7 +1,7 @@
 import React from 'react';
 import PageLayout from '../../components/PageLayout';
 
-import * as styles from '../../styles/project.module.css';
+// import * as styles from '../../styles/project.module.css';
 import { graphql } from 'gatsby';
 
 export default function Projects({ data }) {
@@ -11,34 +11,33 @@ export default function Projects({ data }) {
 
 	return (
 		<PageLayout>
-			<section className={styles.projects}>
-				<h2>Projects</h2>
+			<section>
+				<h1>Projects</h1>
 			</section>
 			<div>
 				{projects.map((project) => (
-					<div>
-						<a
-							key={project.id}
-							href={project.frontmatter.githubRepo}
-							target="_blank"
-							rel="noreferrer"
-						>
-							{project.frontmatter.title}
-						</a>
-					</div>
+					<a
+						key={project.id}
+						href={project.frontmatter.githubRepo}
+						target="_blank"
+						rel="noreferrer"
+					>
+						{project.frontmatter.title}
+					</a>
 				))}
 			</div>
 		</PageLayout>
 	);
 }
 
-export const getProjectsMarkdown = graphql`
+export const getProjects = graphql`
 	query projectsQuery {
 		allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
 			nodes {
 				frontmatter {
 					title
 					stack
+					path
 					githubRepo
 					description
 					date
