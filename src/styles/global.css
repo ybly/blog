@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Global variables */
+:root {
+    --content-width: 700px;
+    --font-family: "Montserrat";
+    --font-color: white;
+    --background-color: #181818;
+    
+    --btn-background: #252525;
+    
+    --footer-color: #bbb;
+}
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Montserrat";
-    color:white;
+    font-family: var(--font-family);
+    color: var(--font-color);
 }
 
 html, body {
@@ -13,7 +25,7 @@ html, body {
 }
 
 body {
-    background: #181818;
+    background: var(--background-color);
     background-repeat: no-repeat;
 }
 
@@ -23,8 +35,7 @@ p {
 }
 
 /* layout & nav */
-.layout {
-    max-width: 700px;
+.page-layout {
     margin: 0 auto;
 }
 
@@ -52,8 +63,30 @@ nav a:active {
     font-weight: 600;
 }
 
+/* container */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--content-width);
+    padding: 0 1rem;
+}
+
+
+
+
+/* footer */
 footer p {
+    font-size: smaller;
     text-align: center;
-    color: #bbb;
+    color: var(--footer-color);
     margin: 40px auto;
+}
+
+
+.button {
+    display: inline-block;
+    background: var(--btn-background);
+    padding: .75rem 1rem;
+    border-radius: 10px;
+    font-weight: 500;
 }
