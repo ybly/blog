@@ -8,6 +8,19 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-	plugins: [],
+	plugins: [
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `projects`,
+				path: `${__dirname}/src/projects/`,
+			},
+		},
+	],
+	siteMetadata: {
+		title: "Bo's personal portfolio",
+		description: 'Software developer portfolio',
+		author: 'Yin Bo Ly',
+	},
 	trailingSlash: 'never',
 };
