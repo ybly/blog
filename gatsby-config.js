@@ -9,7 +9,10 @@
  */
 module.exports = {
 	plugins: [
-		'gatsby-transformer-remark',
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {},
+		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
