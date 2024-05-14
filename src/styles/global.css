@@ -3,8 +3,10 @@
 /* Global variables */
 :root {
     --content-width: 700px;
-    --font-family: "Montserrat";
+    --font-family-base: "Montserrat";
+    --font-family-monospace: Menlo, "IBM Plex Mono", Menlo, monospace;
     --font-color: white;
+    --font-color-muted: #999;
     --background-color: #181818;
     
     --btn-background: #252525;
@@ -16,7 +18,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family-base);
     color: var(--font-color);
 }
 
@@ -34,6 +36,15 @@ p {
     line-height: 1.6em;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
 /* layout & nav */
 .page-layout {
     margin: 0 auto;
@@ -41,7 +52,7 @@ p {
 
 nav {
     display: flex;
-    margin: 40px auto;
+    margin: 2em auto;
 }
 nav .links {
     display: inline-block;
@@ -71,9 +82,6 @@ nav a:active {
     padding: 0 1rem;
 }
 
-
-
-
 /* footer */
 footer p {
     font-size: smaller;
@@ -89,4 +97,10 @@ footer p {
     padding: .75rem 1rem;
     border-radius: 10px;
     font-weight: 500;
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    
 }

@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Navbar() {
 	return (
-		<nav>
+		<nav className="container">
 			<div className="links">
 				<Link to="/">Home</Link>
 				<Link to="/about">About</Link>
