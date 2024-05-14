@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import PageLayout from '../components/PageLayout';
 
 export default function About() {
 	return (
-		<Layout>
+		<PageLayout>
 			<section>
 				<h1>About Me</h1>
 				<p>Something about me</p>
 			</section>
-		</Layout>
+		</PageLayout>
 	);
 }

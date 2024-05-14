@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import PageLayout from '../components/PageLayout';
 
 export default function NotFound() {
 	return (
-		<Layout>
+		<PageLayout>
 			<div>
 				<img
 					src="404-error-bro-yellow.svg"
@@ -11,6 +11,6 @@ export default function NotFound() {
 					style={{ maxWidth: '100%' }}
 				/>
 			</div>
-		</Layout>
+		</PageLayout>
 	);
 }

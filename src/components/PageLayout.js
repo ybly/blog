@@ -3,11 +3,13 @@ import Navbar from './Navbar';
 
 import '../styles/global.css';
 
-export default function Layout({ children }) {
+export default function PageLayout({ children }) {
 	return (
-		<div className="layout">
-			<Navbar />
-			<div className="content">{children}</div>
+		<div className="page-layout">
+			<div className="container">
+				<Navbar />
+				<div>{children}</div>
+			</div>
 			<footer>
 				<p>Copyright 2024</p>
 			</footer>

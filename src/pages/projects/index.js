@@ -1,15 +1,50 @@
 import React from 'react';
-import Layout from '../../components/Layout';
+import PageLayout from '../../components/PageLayout';
 
 import * as styles from '../../styles/project.module.css';
+import { graphql } from 'gatsby';
 
-export default function Projects() {
+export default function Projects({ data }) {
+	console.log(data);
+
+	const projects = data.allMarkdownRemark.nodes;
+
 	return (
-		<Layout>
-			<section className={styles.portfolio}>
+		<PageLayout>
+			<section className={styles.projects}>
 				<h2>Projects</h2>
-				<h3>My personal projects.</h3>
 			</section>
-		</Layout>
+			<div>
+				{projects.map((project) => (
+					<div>
+						<a
+							key={project.id}
+							href={project.frontmatter.githubRepo}
+							target="_blank"
+							rel="noreferrer"
+						>
+							{project.frontmatter.title}
+						</a>
+					</div>
+				))}
+			</div>
+		</PageLayout>
 	);
 }
+
+export const getProjectsMarkdown = graphql`
+	query projectsQuery {
+		allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+			nodes {
+				frontmatter {
+					title
+					stack
+					githubRepo
+					description
+					date
+				}
+				id
+			}
+		}
+	}
+`;
