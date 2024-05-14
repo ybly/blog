@@ -2,7 +2,8 @@
 title: 'yinboly.com'
 date: '2024-05-14'
 stack: 'React, Gatsby, Graphql, netlify'
-description: 'The source of this website.'
+path: 'portfolio'
+description: 'Personal Portfolio Website.'
 githubRepo: 'https://github.com/ybly/yinboly.com'
 ---
 
