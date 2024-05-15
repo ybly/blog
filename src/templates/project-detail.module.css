@@ -1,0 +1,15 @@
+.projectDetail {
+    
+    .content {
+        margin: 40px auto;
+    }
+    
+    h1, h2 { 
+        font-size: 3rem;
+    }
+
+    p {
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+    }
+}
