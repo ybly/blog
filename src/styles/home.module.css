@@ -43,10 +43,10 @@ section > .homeHeading {
     color: var(--font-color-muted);
 }
 
-.projectDate {
-    color: #FFC100;
-    font-family: var(--font-family-monospace);
-    font-size: 1.25rem;
+.date {
+    color: var(--font-color-alt);
+    font-family: var(--font-family-ibm-plex-mono);
+    font-size: 0.9em;
     font-weight: 500;
     margin-left: auto;
     white-space: nowrap;
