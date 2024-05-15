@@ -14,11 +14,11 @@ exports.createPages = async ({ graphql, actions }) => {
 				nodes {
 					frontmatter {
 						title
-						stack
-						path
-						githubRepo
-						description
 						date
+						slug
+						stack
+						description
+						githubRepo
 					}
 				}
 			}
@@ -27,12 +27,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
 	data.allMarkdownRemark.nodes.forEach((node) => {
 		createPage({
-			path: `${node.frontmatter.path}`,
+			path: `${node.frontmatter.slug}`,
 			component: path.resolve('./src/templates/project-detail.js'),
 			context: {
-				title: node.frontmatter.title,
-				stack: node.frontmatter.stack,
-				path: node.frontmatter.path,
+				slug: node.frontmatter.slug,
 			},
 		});
 	});

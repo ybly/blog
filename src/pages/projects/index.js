@@ -37,7 +37,7 @@ export const getProjects = graphql`
 				frontmatter {
 					title
 					stack
-					path
+					slug
 					githubRepo
 					description
 					date

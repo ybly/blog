@@ -47,11 +47,11 @@ export const getProjects = graphql`
 			nodes {
 				frontmatter {
 					title
-					stack
-					path
-					githubRepo
-					description
 					date
+					slug
+					stack
+					description
+					githubRepo
 				}
 				id
 			}

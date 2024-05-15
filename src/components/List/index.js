@@ -10,7 +10,7 @@ export default function List({ listItems = [] }) {
 				<Link
 					className={style.listItem}
 					key={item.id}
-					to={item.frontmatter.path}
+					to={item.frontmatter.slug}
 				>
 					<h3>{item.frontmatter.description}</h3>
 					<span className={style.date}>
