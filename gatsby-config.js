@@ -19,10 +19,7 @@ module.exports = {
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				// Add your gatsby-remark-* plugins here
-				plugins: [
-					// Markdown code highlighting
-					`gatsby-remark-prismjs`,
-				],
+				plugins: [`gatsby-remark-prismjs`],
 			},
 		},
 		{
