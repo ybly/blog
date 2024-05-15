@@ -4,6 +4,11 @@ import { Link, graphql } from 'gatsby';
 
 import * as styles from '../styles/home.module.css';
 
+const formatDates = (dateString) => {
+	const date = new Date(dateString);
+	return date.toLocaleDateString('en-GB', { year: 'numeric', month: 'long' });
+};
+
 export default function Home({ data }) {
 	console.log(data);
 
@@ -38,8 +43,8 @@ export default function Home({ data }) {
 							to={'/projects/' + project.frontmatter.path}
 						>
 							<h3>{project.frontmatter.description}</h3>
-							<span className={styles.projectDate}>
-								{String(project.frontmatter.date).substring(0, 4)}
+							<span className={styles.date}>
+								{formatDates(project.frontmatter.date)}
 							</span>
 						</Link>
 					))}
