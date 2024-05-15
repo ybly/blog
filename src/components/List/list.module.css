@@ -1,0 +1,27 @@
+.list {
+    display: grid;
+    column-gap: 2rem;
+    margin: 3rem 0
+}
+
+.listItem {
+    background: transparent;
+    border-bottom: 1px solid #2C2C2C;
+    display: flex;
+    gap: 1rem;
+    padding: .4rem 0;
+    text-decoration: none;
+
+    h3 {
+        color: var(--font-color-muted);
+    }
+}
+
+.date {
+    color: var(--font-color-alt);
+    font-family: var(--font-family-ibm-plex-mono);
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-left: auto;
+    white-space: nowrap;
+}

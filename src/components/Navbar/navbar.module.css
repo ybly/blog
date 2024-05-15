@@ -1,0 +1,23 @@
+nav, .navbar {
+    display: flex;
+    margin: 2em auto;
+
+    .links {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+nav a, .navbar a {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, .navbar a:hover 
+nav a:active, .navbar a:active {
+    border-color: white;
+    font-weight: 600;
+}

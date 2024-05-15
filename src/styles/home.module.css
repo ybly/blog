@@ -1,53 +1,25 @@
 .header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap:1rem;
+    grid-gap: 1rem;
     align-items: center;
-}
 
-.header p {
-    font-weight: 500;
-    line-height: 1.7;
+    p {
+        font-weight: 500;
+        line-height: 1.7;
+    }
 }
 
 section {
     margin-top: 3rem;
-}
 
-section > .homeHeading {
-    align-items: center;
-    border: 0;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    padding: 0;
-}
-
-.projectList {
-    display: grid;
-    column-gap: 2rem;
-    margin: 3rem 0
-}
-
-.projectItem {
-    background: transparent;
-    border-bottom: 1px solid #2C2C2C;
-    display: flex;
-    gap: 1rem;
-    padding: .4rem 0;
-    text-decoration: none;
-}
-
-.projectItem > h3 {
-    color: var(--font-color-muted);
-}
-
-.date {
-    color: var(--font-color-alt);
-    font-family: var(--font-family-ibm-plex-mono);
-    font-size: 0.9em;
-    font-weight: 500;
-    margin-left: auto;
-    white-space: nowrap;
+    .homeHeading {
+        align-items: center;
+        border: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        padding: 0;
+    }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../components/PageLayout';
+import Layout from '../../components/Layout';
 
 // import * as styles from '../../styles/project.module.css';
 import { graphql } from 'gatsby';
@@ -10,7 +10,7 @@ export default function Projects({ data }) {
 	const projects = data.allMarkdownRemark.nodes;
 
 	return (
-		<PageLayout>
+		<Layout>
 			<section>
 				<h1>Projects</h1>
 			</section>
@@ -26,7 +26,7 @@ export default function Projects({ data }) {
 					</a>
 				))}
 			</div>
-		</PageLayout>
+		</Layout>
 	);
 }
 

@@ -7,13 +7,13 @@
     --font-family-base: "Montserrat";
     --font-family-ibm-plex-mono: Menlo, "IBM Plex Mono", Menlo, monospace;
     --font-color-base: white;
-    --font-color-alt: #FFC100; 
+    --font-color-alt: #FFC100;
     --font-color-muted: #999;
     --background-color: #181818;
-    
+
     --btn-background: #252525;
-    
-    --footer-color: #bbb;
+
+    --footer-color: #BBB;
 }
 
 * {
@@ -24,7 +24,8 @@
     color: var(--font-color-base);
 }
 
-html, body {
+html,
+body {
     min-height: 100%;
 }
 
@@ -46,36 +47,6 @@ h2 {
     font-size: 2em;
 }
 
-
-/* layout & nav */
-.page-layout {
-    margin: 0 auto;
-}
-
-nav {
-    display: flex;
-    margin: 2em auto;
-}
-nav .links {
-    display: inline-block;
-    text-align: left;
-}
-nav a {
-    display: inline-block;
-    margin-right: 20px;
-    font-weight: 500;
-    padding-bottom: 8px;
-    border-bottom: 3px solid transparent;
-}
-nav a:hover {
-    border-color:white;
-    font-weight: 600;
-}
-nav a:active {
-    border-color:white;
-    font-weight: 600;
-}
-
 /* container */
 .container {
     margin-left: auto;
@@ -83,19 +54,6 @@ nav a:active {
     max-width: var(--content-width);
     padding: 0 1rem;
 }
-
-/* footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-footer p {
-    color: var(--footer-color);
-}
-
 
 .button {
     display: inline-block;
@@ -106,7 +64,4 @@ footer p {
 }
 
 
-@media screen and (max-width: 700px) {
-    
-    
-}
+/* @media screen and (max-width: 700px) { } */

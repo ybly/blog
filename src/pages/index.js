@@ -1,13 +1,12 @@
 import * as React from 'react';
-import PageLayout from '../components/PageLayout';
 import { Link, graphql } from 'gatsby';
 
-import * as styles from '../styles/home.module.css';
+import Layout from '../components/Layout';
+import List from '../components/List';
 
-const formatDates = (dateString) => {
-	const date = new Date(dateString);
-	return date.toLocaleDateString('en-GB', { year: 'numeric', month: 'long' });
-};
+import '../styles/global.css';
+
+import * as styles from '../styles/home.module.css';
 
 export default function Home({ data }) {
 	console.log(data);
@@ -15,7 +14,7 @@ export default function Home({ data }) {
 	const projects = data.allMarkdownRemark.nodes;
 
 	return (
-		<PageLayout>
+		<Layout>
 			<section className={styles.header}>
 				<div>
 					<h1>Hey, I'm Bo</h1>
@@ -35,22 +34,10 @@ export default function Home({ data }) {
 						View All
 					</Link>
 				</div>
-				<div className={styles.projectList}>
-					{projects.map((project) => (
-						<Link
-							className={styles.projectItem}
-							key={project.id}
-							to={'/projects/' + project.frontmatter.path}
-						>
-							<h3>{project.frontmatter.description}</h3>
-							<span className={styles.date}>
-								{formatDates(project.frontmatter.date)}
-							</span>
-						</Link>
-					))}
-				</div>
+
+				<List listItems={projects} />
 			</section>
-		</PageLayout>
+		</Layout>
 	);
 }
 
