@@ -10,7 +10,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
 	const { data } = await graphql(`
 		query projects {
-			allMarkdownRemark {
+			allMarkdownRemark(filter: { frontmatter: { display: { eq: true } } }) {
 				nodes {
 					frontmatter {
 						title
@@ -19,6 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
 						stack
 						description
 						githubRepo
+						display
 					}
 				}
 			}

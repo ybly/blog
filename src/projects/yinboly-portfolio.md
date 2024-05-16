@@ -5,6 +5,7 @@ slug: '/projects/portfolio'
 stack: 'React, Gatsby, Graphql'
 description: 'Personal Portfolio Website.'
 githubRepo: 'https://github.com/ybly/yinboly.com'
+display: true
 ---
 
 [yinboly.com](https://www.yinboly.com) is my personal portfolio website where I share my projects tutorials, and more. Visit for updates and explore the projects page to see highlights on my personal projects.
