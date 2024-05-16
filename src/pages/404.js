@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
+
 import Layout from '../components/Layout';
+import { GatsbyLinkButton } from '../components/Button';
 
 export default function NotFound() {
 	return (
@@ -11,9 +12,9 @@ export default function NotFound() {
 				<p style={{ textDecoration: 'underline', fontWeight: 600 }}>
 					{`${window.location}`}
 				</p>
-				<Link to="/" className="button">
+				<GatsbyLinkButton to="/" className="button">
 					Home
-				</Link>
+				</GatsbyLinkButton>
 			</div>
 			<div>
 				<img

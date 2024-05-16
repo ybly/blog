@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
+
+import '../styles/global.css';
+import * as styles from '../styles/home.module.css';
 
 import Layout from '../components/Layout';
 import List from '../components/List';
-
-import '../styles/global.css';
-
-import * as styles from '../styles/home.module.css';
+import { GatsbyLinkButton } from '../components/Button';
 
 export default function Home({ data }) {
 	console.log(data);
@@ -30,9 +30,7 @@ export default function Home({ data }) {
 			<section>
 				<div className={styles.homeHeading}>
 					<h2 className="title">Latest Projects</h2>
-					<Link to="/projects" className="button">
-						View All
-					</Link>
+					<GatsbyLinkButton to={'/projects'}>View All</GatsbyLinkButton>
 				</div>
 
 				<List listItems={projects} />
