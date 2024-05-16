@@ -5,19 +5,21 @@ import * as style from './list.module.css';
 
 export default function List({ listItems = [] }) {
 	return (
-		<div className={style.list}>
-			{listItems.map((item) => (
-				<Link
-					className={style.listItem}
-					key={item.id}
-					to={item.frontmatter.slug}
-				>
-					<h3>{item.frontmatter.description}</h3>
-					<span className={style.date}>
-						{formatDateString(item.frontmatter.date)}
-					</span>
-				</Link>
-			))}
+		<div className={style.listContainer}>
+			<div className={style.list}>
+				{listItems.map((item) => (
+					<Link
+						className={style.listItem}
+						key={item.id}
+						to={item.frontmatter.slug}
+					>
+						<h3>{item.frontmatter.description}</h3>
+						<span className={style.date}>
+							{formatDateString(item.frontmatter.date)}
+						</span>
+					</Link>
+				))}
+			</div>
 		</div>
 	);
 }

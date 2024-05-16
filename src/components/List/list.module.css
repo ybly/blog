@@ -1,3 +1,7 @@
+.listContainer {
+    min-height: 250px;
+}
+
 .list {
     display: grid;
     column-gap: 2rem;
@@ -6,7 +10,7 @@
 
 .listItem {
     background: transparent;
-    border-bottom: 1px solid #2C2C2C;
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     gap: 1rem;
     padding: .4rem 0;
