@@ -8,10 +8,7 @@ export default function NotFound() {
 		<Layout>
 			<h1>404 - Page not found!</h1>
 			<div>
-				<p>The following page is not available.</p>
-				<p style={{ textDecoration: 'underline', fontWeight: 600 }}>
-					{`${window?.location}`}
-				</p>
+				<p>The page is not available.</p>
 				<GatsbyLinkButton to="/" className="button">
 					Home
 				</GatsbyLinkButton>
