@@ -10,12 +10,12 @@ export default function Layout({ children }) {
 				<Navbar />
 			</div>
 
-			<div className="container">
+			<div className={style.content}>
 				<div>{children}</div>
 			</div>
 
 			<footer>
-				<div>
+				<div className={style.socials}>
 					<a
 						href="https://www.linkedin.com/in/yinboly"
 						target="_blank"

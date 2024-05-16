@@ -9,14 +9,15 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .button {
+    font-family: var(--font-family-ibm-plex-mono);
+    font-weight: 600;
+    font-size: 0.9em;
     display: inline-flex;
     align-items: center;
     background: var(--btn-background);
     padding: .75rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: 10px;
-    font-weight: 500;
-    font-size: 0.9em;
 }
 
 

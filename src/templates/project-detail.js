@@ -11,15 +11,24 @@ import { Button } from '../components/Button';
 export default function projectDetails({ data }) {
 	const { html, frontmatter } = data.markdownRemark;
 
+	const techStack = frontmatter.stack.split(',');
+
 	return (
 		<Layout>
 			<div className={style.projectDetail}>
 				<section>
-					<h1>{frontmatter.title}</h1>
-				</section>
-
-				<section>
-					<div>{frontmatter.stack}</div>
+					<div>
+						<h1>{frontmatter.title}</h1>
+						<div className={style.technologyStackContainer}>
+							{techStack.map((tech) => {
+								return (
+									<span key={`stack-${tech}`} className="tag">
+										{tech}
+									</span>
+								);
+							})}
+						</div>
+					</div>
 					<Button
 						onClick={() => {
 							window.open(`${frontmatter.githubRepo}`, '_blank');

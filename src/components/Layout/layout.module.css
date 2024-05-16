@@ -1,5 +1,31 @@
 .layout {
     margin: 0 auto;
+
+    .content {
+        max-width: var(--content-width);
+        min-height: 100vh;
+        padding: 0 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .socials {
+        margin: 0.5rem 0;
+
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    .disclaimer {
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+    
+        p {
+            margin-right: 1rem;
+        }
+    }
 }
 
 footer {
@@ -18,15 +44,4 @@ footer {
         text-decoration: underline;
     }
 
-}
-
-.disclaimer {
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 1rem;
-
-    p {
-        margin-right: 1rem;
-    }
 }

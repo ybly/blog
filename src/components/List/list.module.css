@@ -10,11 +10,12 @@
 
 .listItem {
     background: transparent;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     display: flex;
     gap: 1rem;
     padding: .4rem 0;
     text-decoration: none;
+    padding-bottom: 1px;
 
     h3 {
         color: var(--font-color-muted);
@@ -22,8 +23,9 @@
 }
 
 .listItem:hover {
-    transform: scale(1.01);
-    
+    transform: scale(1.02);
+    border-bottom: 3px solid var(--font-color-alt);
+
     h3 {
         color: var(--font-color-base);
     }

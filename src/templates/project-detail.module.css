@@ -1,5 +1,7 @@
 .projectDetail {
     
+    min-height: 100vh;
+
     .content {
         margin: 40px auto;
     }
@@ -28,6 +30,10 @@
         color: black;
         background-color: var(--font-color-alt);
         text-decoration: none;
+    }
+
+    .technologyStackContainer {
+        margin: 1rem 0;
     }
    
 }

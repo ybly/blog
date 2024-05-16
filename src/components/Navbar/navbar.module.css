@@ -12,12 +12,12 @@ nav a, .navbar a {
     display: inline-block;
     margin-right: 20px;
     font-weight: 600;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     border-bottom: 4px solid transparent;
 }
 
 nav a:hover, .navbar a:hover {
-    border-color: white;
+    border-color: var(--color-yellow-muted);
     transform: scale(1.1);
     font-weight: 700;
 }

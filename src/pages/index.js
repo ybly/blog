@@ -34,7 +34,7 @@ export default function Home({ data }) {
 			<section>
 				<div className={style.homeHeading}>
 					<h2 className="title">Latest Projects</h2>
-					<GatsbyLinkButton to={'/projects'}>View All</GatsbyLinkButton>
+					<GatsbyLinkButton to={'/projects'}>view all</GatsbyLinkButton>
 				</div>
 				<List listItems={projects} />
 			</section>
