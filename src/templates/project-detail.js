@@ -22,10 +22,10 @@ export default function projectDetails({ data }) {
 					<div>{frontmatter.stack}</div>
 					<Button
 						onClick={() => {
-							window.open('https://github.com/ybly', '_blank');
+							window.open(`${frontmatter.githubRepo}`, '_blank');
 						}}
 					>
-						Source
+						source
 						<img src="/icons8-external-link.svg" alt="icon-external-link" />
 					</Button>
 				</section>
