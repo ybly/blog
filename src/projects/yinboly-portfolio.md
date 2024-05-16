@@ -41,13 +41,21 @@ A quick look at the top-level files and directories in this project.
     └── README.md
 
 - **_`/src`_**: This directory will contain all of the code related to what you see on the front-end of the site.
+
 - **_`/src/components`_**: This directory will contain all of the react components used in the front-end.
+
 - **_`/src/pages`_**: This directory contains all the individual pages for the website.
+
 - **_`/src/pages/index.js`_**: Homepage and main entry point of the website.
+
 - **_`/src/pages/404.js`_**: Customised 404 not found page when an invalid route is attempted.
+
 - **_`/src/projects`_**: This directory contains all the project markdown files which will be used to construct the content for project pages.
+
 - **_`/src/styles`_**: This directory contains global and page specific css modules.
+
 - **_`/src/templates`_**: This directory contains page specific templates styles used in generating static pages.
+
 - **_`/static`_**: This directory contains static images and icons used in the front-end.
 
 - **_`gatsby-config.js`_**: This is the main configuration file for a Gatsby site. This is where specific information about the site (metadata) like title, description and which Gatsby plugins are included, etc... Check out the [Gatsby Config Docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail.
@@ -70,12 +78,16 @@ we use `gatsby-transformer-filesystem` and `gatsby-transformer-remark` plugins t
 
 ## 🎓 Learning Gatsby
 
-** [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/getting-started/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+Full documentation for Gatsby lives on the [gatsbyjs.com](https://www.gatsbyjs.com/).
 
-Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+**To dive straight into code samples, head to the [documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-**To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+Great places to start with crate a site with Gatsby:
+
+1. Gatsby starter used for this site _[gatsby-starter-hello-world](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world/)_.
+
+2. in-depth _[tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/)_ for creating a site with Gatsby.
 
 ## 🚀 Deploy
 
-This site is deployed and hosted on [Netlify](https://netlify.com)
+This site is deployed and hosted on [Netlify](https://netlify.com).
