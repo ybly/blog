@@ -1,3 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2dc9185f-7e4e-4882-a58b-61e374490cba/deploy-status)](https://app.netlify.com/sites/yinboly/deploys)
+
+
+
 [yinboly.com](https://www.yinboly.com) is my personal portfolio website where I share my projects tutorials, and more. Visit for updates and explore the projects page to see highlights on my personal projects.
 
 ## 🧐 What's inside?
@@ -103,8 +107,4 @@ Great places to start with crate a site with Gatsby:
 
 
 3. In-depth _[tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/)_ for creating a site with Gatsby.
-
-## 🚀 Deploy
-
-This site is deployed and hosted on [Netlify](https://netlify.com).
 
