@@ -23,7 +23,7 @@ export default function projectDetails({ data }) {
 							{techStack.map((tech) => {
 								return (
 									<span key={`stack-${tech}`} className="tag">
-										{tech}
+										{String(tech).trim()}
 									</span>
 								);
 							})}
