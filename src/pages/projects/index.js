@@ -4,6 +4,8 @@ import Layout from '../../components/Layout';
 // import * as styles from '../../styles/project.module.css';
 import { graphql } from 'gatsby';
 
+import List from '../../components/List';
+
 export default function Projects({ data }) {
 	console.log(data);
 
@@ -15,7 +17,7 @@ export default function Projects({ data }) {
 				<h1>Projects</h1>
 			</section>
 			<div>
-				{projects.map((project) => (
+				{/* {projects.map((project) => (
 					<a
 						key={project.id}
 						href={project.frontmatter.githubRepo}
@@ -24,7 +26,9 @@ export default function Projects({ data }) {
 					>
 						{project.frontmatter.title}
 					</a>
-				))}
+				))} */}
+
+				<List listItems={projects} />
 			</div>
 		</Layout>
 	);
