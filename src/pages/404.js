@@ -10,7 +10,7 @@ export default function NotFound() {
 			<div>
 				<p>The following page is not available.</p>
 				<p style={{ textDecoration: 'underline', fontWeight: 600 }}>
-					{`${window.location}`}
+					{`${window?.location}`}
 				</p>
 				<GatsbyLinkButton to="/" className="button">
 					Home
