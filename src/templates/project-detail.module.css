@@ -4,12 +4,30 @@
         margin: 40px auto;
     }
     
-    h1, h2 { 
+    h1 { 
         font-size: 3rem;
     }
+    h2 {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+
 
     p {
         line-height: 1.8;
         margin-bottom: 1.5rem;
     }
+
+    a {
+        color: var(--font-color-alt);
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    a:hover {
+        color: black;
+        background-color: var(--font-color-alt);
+        text-decoration: none;
+    }
+   
 }

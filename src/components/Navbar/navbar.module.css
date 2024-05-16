@@ -11,13 +11,16 @@ nav, .navbar {
 nav a, .navbar a {
     display: inline-block;
     margin-right: 20px;
-    font-weight: 500;
-    padding-bottom: 8px;
-    border-bottom: 3px solid transparent;
+    font-weight: 600;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
 }
 
-nav a:hover, .navbar a:hover 
-nav a:active, .navbar a:active {
+nav a:hover, .navbar a:hover {
     border-color: white;
-    font-weight: 600;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+nav a:active, .navbar a:active {
+    transform: scale(1);
 }

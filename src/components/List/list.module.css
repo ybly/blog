@@ -17,6 +17,18 @@
     }
 }
 
+.listItem:hover {
+    transform: scale(1.01);
+    
+    h3 {
+        color: var(--font-color-base);
+    }
+}
+
+.listItem:active {
+    transform: scale(1);
+}
+
 .date {
     color: var(--font-color-alt);
     font-family: var(--font-family-ibm-plex-mono);

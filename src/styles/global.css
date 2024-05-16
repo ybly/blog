@@ -6,10 +6,13 @@
     --content-width: 700px;
     --font-family-base: "Montserrat";
     --font-family-ibm-plex-mono: Menlo, "IBM Plex Mono", Menlo, monospace;
-    --font-color-base: white;
+    --font-color-base: #FFF;
     --font-color-alt: #FFC100;
     --font-color-muted: #999;
     --background-color: #181818;
+
+    --border-color: #2C2C2C;
+    --border-color-hover: #666;
 
     --btn-background: #252525;
 
@@ -47,6 +50,10 @@ h2 {
     font-size: 2em;
 }
 
+a {
+    font-weight: 500;
+}
+
 /* container */
 .container {
     margin-left: auto;
@@ -54,14 +61,5 @@ h2 {
     max-width: var(--content-width);
     padding: 0 1rem;
 }
-
-.button {
-    display: inline-block;
-    background: var(--btn-background);
-    padding: .75rem 1rem;
-    border-radius: 10px;
-    font-weight: 500;
-}
-
 
 /* @media screen and (max-width: 700px) { } */
