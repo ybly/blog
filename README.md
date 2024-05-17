@@ -1,7 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2dc9185f-7e4e-4882-a58b-61e374490cba/deploy-status)](https://app.netlify.com/sites/yinboly/deploys)
 
-
-
 [yinboly.com](https://www.yinboly.com) is my personal portfolio website where I share my projects, tutorials, and more. Visit for updates and explore the projects page to see highlights of my personal projects.
 
 ## 🧐 What's inside?
@@ -57,10 +55,9 @@ A quick look at the top-level files and directories in this project.
 
 - **_`gatsby-node.js`_**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-    We use the `gatsby-transformer-filesystem` and `gatsby-transformer-remark` plugins to parse project markdown files and create static project detail pages during the build process using a page template set up in `src/template`.
+  We use the `gatsby-transformer-filesystem` and `gatsby-transformer-remark` plugins to parse project markdown files and create static project detail pages during the build process using a page template set up in `src/template`.
 
 - **_`package.json`_**: A manifest file for Node.js projects, including metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
 
 ## ⚡Gatsby Plugins Used
 
@@ -72,7 +69,6 @@ A quick look at the top-level files and directories in this project.
 
 - **`gatsby-plugin-manifest`**: The manifest provides configuration and icons.
 
-
 ## 🎓 Learning Gatsby
 
 Full documentation for Gatsby lives on the [gatsbyjs.com](https://www.gatsbyjs.com/).
@@ -81,32 +77,30 @@ Full documentation for Gatsby lives on the [gatsbyjs.com](https://www.gatsbyjs.c
 
 Great places to start with to create a site with Gatsby:
 
-1. Gatsby starter used for this site _[gatsby-starter-hello-world](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world/)_.
+1. In-depth _[tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/)_ for creating a site with Gatsby.
+
+2. Gatsby starter used for this site _[gatsby-starter-hello-world](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world/)_.
 
    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/#gatsby-cli)) to create a new site, specifying the hello-world starter.
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+   ```shell
+   # create a new Gatsby site using the hello-world starter
+   gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+   ```
 
--  **Start developing.**
+- **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+  Navigate into your new site’s directory and start it up.
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+  ```shell
+  cd my-hello-world-starter/
+  gatsby develop
+  ```
 
--  **Open the source code and start editing!**
+- **Open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000`!
+  Your site is now running at `http://localhost:8000`!
 
-    Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+  Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes, and the browser will update in real time!
-
-
-3. In-depth _[tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/)_ for creating a site with Gatsby.
-
+  Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes, and the browser will update in real time!
