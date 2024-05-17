@@ -43,5 +43,12 @@
     ul, ol {
         padding: 1rem;
     }
-   
+
+    blockquote > p {
+        margin: 1em 0;
+        padding: 0 1em;
+        font-weight: 500;
+        color: var(--font-color-muted);
+        border-left: .25em solid var(--border-color-blockquote);
+      }
 }

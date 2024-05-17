@@ -13,11 +13,13 @@
 
     --border-color: #2C2C2C;
     --border-color-hover: #666;
+    --border-color-blockquote: #30363D;
 
     --btn-background: #252525;
 
     --color-yellow-muted: #FFC100;
     --color-green-muted: #40CF8E;
+
 }
 
 * {

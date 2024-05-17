@@ -55,7 +55,7 @@ A quick look at the top-level files and directories in this project.
 
 - **_`gatsby-node.js`_**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-  We use the `gatsby-transformer-filesystem` and `gatsby-transformer-remark` plugins to parse project markdown files and create static project detail pages during the build process using a page template set up in `src/template`.
+  > We use the `gatsby-transformer-filesystem` and `gatsby-transformer-remark` plugins to parse project markdown files and create static project detail pages during the build process using a page template set up in `src/template`.
 
 - **_`package.json`_**: A manifest file for Node.js projects, including metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
@@ -75,7 +75,7 @@ Full documentation for Gatsby lives on the [gatsbyjs.com](https://www.gatsbyjs.c
 
 **To dive straight into code samples, head to the [documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-Great places to start with to create a site with Gatsby:
+Great places to start with Gatsby:
 
 1. In-depth _[tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/)_ for creating a site with Gatsby.
 
@@ -101,6 +101,6 @@ Great places to start with to create a site with Gatsby:
 
   Your site is now running at `http://localhost:8000`!
 
-  Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+  > Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
 
   Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes, and the browser will update in real time!
