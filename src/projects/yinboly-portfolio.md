@@ -81,7 +81,7 @@ A quick look at the top-level files and directories in this project.
 
 ## 🎓 Learning Gatsby
 
-Full documentation for Gatsby lives on the [gatsbyjs.com](https://www.gatsbyjs.com/).
+Full documentation for Gatsby can be found on [gatsbyjs.com](https://www.gatsbyjs.com/).
 
 **To dive straight into code samples, head to the [documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
