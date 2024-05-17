@@ -8,6 +8,8 @@ githubRepo: 'https://github.com/ybly/yinboly.com'
 display: true
 ---
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2dc9185f-7e4e-4882-a58b-61e374490cba/deploy-status)](https://app.netlify.com/sites/yinboly/deploys)
+
 [yinboly.com](https://www.yinboly.com) is my personal portfolio website where I share my projects tutorials, and more. Visit for updates and explore the projects page to see highlights on my personal projects.
 
 ## 🧐 What's inside?

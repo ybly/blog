@@ -32,6 +32,10 @@
         text-decoration: none;
     }
 
+    a:hover:has(img) {
+        background-color: unset;
+    }
+
     .technologyStackContainer {
         margin: 1rem 0;
     }
