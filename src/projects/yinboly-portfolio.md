@@ -10,7 +10,7 @@ display: true
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2dc9185f-7e4e-4882-a58b-61e374490cba/deploy-status)](https://app.netlify.com/sites/yinboly/deploys)
 
-[yinboly.com](https://www.yinboly.com) is my personal portfolio website where I share my projects tutorials, and more. Visit for updates and explore the projects page to see highlights on my personal projects.
+[yinboly.com](https://www.yinboly.com) is my personal portfolio website where I share my projects, tutorials, and more. Visit for updates and explore the projects page to see highlights of my personal projects.
 
 ## 🧐 What's inside?
 
@@ -57,7 +57,7 @@ A quick look at the top-level files and directories in this project.
 
 - **_`/src/styles`_**: This directory contains global and page specific css modules.
 
-- **_`/src/templates`_**: This directory contains page specific templates styles used in generating static pages.
+- **_`/src/templates`_**: This directory contains page-specific template styles used in generating static pages.
 
 - **_`/static`_**: This directory contains static images and icons used in the front-end.
 
@@ -65,9 +65,9 @@ A quick look at the top-level files and directories in this project.
 
 - **_`gatsby-node.js`_**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-we use `gatsby-transformer-filesystem` and `gatsby-transformer-remark` plugins to parse project markdown files to create static project detail pages during the build process using page template setup in `src/template`.
+We use the `gatsby-transformer-filesystem` and `gatsby-transformer-remark` plugins to parse project markdown files and create static project detail pages during the build process using a page template set up in `src/template`.
 
-- **_`package.json`_**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+- **_`package.json`_**: A manifest file for Node.js projects, including metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 ## ⚡Gatsby Plugins Used
 
@@ -85,7 +85,7 @@ Full documentation for Gatsby lives on the [gatsbyjs.com](https://www.gatsbyjs.c
 
 **To dive straight into code samples, head to the [documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-Great places to start with crate a site with Gatsby:
+Great places to start with to create a site with Gatsby:
 
 1. Gatsby starter used for this site _[gatsby-starter-hello-world](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world/)_.
 
@@ -114,7 +114,3 @@ Great places to start with crate a site with Gatsby:
   Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes, and the browser will update in real time!
 
 3. In-depth _[tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/)_ for creating a site with Gatsby.
-
-## 🚀 Deploy
-
-This site is deployed and hosted on [Netlify](https://netlify.com).
