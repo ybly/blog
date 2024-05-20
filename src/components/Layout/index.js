@@ -10,9 +10,10 @@ export default function Layout({ children }) {
 	const [theme, setTheme] = useState(DARK_THEME);
 
 	function toggleTheme() {
-		setTheme((prevTheme) => {
-			const newTheme = prevTheme === LIGHT_THEME ? DARK_THEME : LIGHT_THEME;
+		setTheme((currentTheme) => {
+			const newTheme = currentTheme === DARK_THEME ? LIGHT_THEME : DARK_THEME;
 			localStorage.setItem('theme', newTheme);
+
 			return newTheme;
 		});
 	}
@@ -22,7 +23,7 @@ export default function Layout({ children }) {
 	}, [theme]);
 
 	return (
-		<div className={style.layout} data-theme={localStorage.getItem('theme')}>
+		<div className={style.layout} data-theme={theme}>
 			<div className="container">
 				{/* <Navbar /> */}
 				<nav className={style.navbar}>
