@@ -5,12 +5,9 @@ import * as style from './layout.module.css';
 
 const LIGHT_THEME = 'light';
 const DARK_THEME = 'dark';
-const DEFAULT_THEME = DARK_THEME;
 
 export default function Layout({ children }) {
-	const [theme, setTheme] = useState(
-		() => localStorage.getItem('theme') || DEFAULT_THEME
-	);
+	const [theme, setTheme] = useState(DARK_THEME);
 
 	function toggleTheme() {
 		setTheme((prevTheme) => {
