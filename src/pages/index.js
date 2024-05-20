@@ -9,8 +9,6 @@ import List from '../components/List';
 import { GatsbyLinkButton } from '../components/Button';
 
 export default function Home({ data }) {
-	console.log(data);
-
 	const projects = data.allMarkdownRemark.nodes;
 
 	return (
