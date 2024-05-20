@@ -6,10 +6,27 @@ import { graphql } from 'gatsby';
 
 import List from '../../components/List';
 
-export default function Projects({ data }) {
-	console.log(data);
+const groupProjectsByYear = (projects) => {
+	let datesByYear = {};
 
+	projects.forEach((proj) => {
+		let year = proj.frontmatter.date.split('-')[0];
+
+		if (!datesByYear[year]) {
+			datesByYear[year] = [];
+		}
+
+		datesByYear[year].push(proj);
+	});
+
+	return datesByYear;
+};
+
+export default function Projects({ data }) {
 	const projects = data.allMarkdownRemark.nodes;
+
+	const projectsGroupedByYear = groupProjectsByYear(projects);
+	const years = Object.keys(projectsGroupedByYear).sort((a, b) => b - a);
 
 	return (
 		<Layout>
@@ -17,18 +34,14 @@ export default function Projects({ data }) {
 				<h1>Projects</h1>
 			</section>
 			<div>
-				{/* {projects.map((project) => (
-					<a
-						key={project.id}
-						href={project.frontmatter.githubRepo}
-						target="_blank"
-						rel="noreferrer"
-					>
-						{project.frontmatter.title}
-					</a>
-				))} */}
-
-				<List listItems={projects} />
+				{years.map((year) => {
+					return (
+						<div key={`${year}-projects`} style={{ marginTop: '4rem' }}>
+							<h2>{year}</h2>
+							<List listItems={projectsGroupedByYear[year]} />
+						</div>
+					);
+				})}
 			</div>
 		</Layout>
 	);
