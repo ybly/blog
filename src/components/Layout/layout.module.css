@@ -1,12 +1,10 @@
 .layout {
-    margin: 0 auto;
-
+    
     .content {
         max-width: var(--content-width);
         min-height: 100vh;
         padding: 0 1rem;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 1rem auto;
     }
     
     .socials {
@@ -26,6 +24,39 @@
             margin-right: 1rem;
         }
     }
+
+    .themeButton {
+        fill: var(--theme-icon-fill); 
+    }
+
+}
+
+nav, .navbar {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+
+    .links {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+nav a, .navbar a {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 600;
+    padding-bottom: 1px;
+    border-bottom: 4px solid transparent;
+}
+
+nav a:hover, .navbar a:hover {
+    border-color: var(--color-yellow-muted);
+    transform: scale(1.1);
+    font-weight: 700;
+}
+nav a:active, .navbar a:active {
+    transform: scale(1);
 }
 
 footer {

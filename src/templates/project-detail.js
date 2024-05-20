@@ -34,8 +34,7 @@ export default function projectDetails({ data }) {
 							window.open(`${frontmatter.githubRepo}`, '_blank');
 						}}
 					>
-						source
-						<img src="/icons8-external-link.svg" alt="icon-external-link" />
+						source code
 					</Button>
 				</section>
 

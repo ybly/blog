@@ -21,14 +21,14 @@
     }
 
     a {
-        color: var(--font-color-alt);
+        color: var(--highlight-color);
         text-decoration: underline;
         text-decoration-thickness: 2px;
     }
 
     a:hover {
         color: black;
-        background-color: var(--font-color-alt);
+        background-color: var(--highlight-color);
         text-decoration: none;
     }
 
