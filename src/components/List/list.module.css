@@ -1,11 +1,8 @@
-.listContainer {
-    min-height: 250px;
-}
 
 .list {
     display: grid;
     column-gap: 2rem;
-    margin: 3rem 0
+    margin: 1rem 0
 }
 
 .listItem {

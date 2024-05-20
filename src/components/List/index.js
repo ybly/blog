@@ -5,7 +5,7 @@ import * as style from './list.module.css';
 
 export default function List({ listItems = [] }) {
 	return (
-		<div className={style.listContainer}>
+		<div>
 			<div className={style.list}>
 				{listItems.map((item) => (
 					<Link
