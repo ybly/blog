@@ -8,6 +8,7 @@
     --font-family-ibm-plex-mono: Menlo, "IBM Plex Mono", Menlo, monospace;
     --font-color-base: #FFF;
     --font-color-alt: #FFC100;
+    --highlight-color: #FFC100;
     --font-color-muted: #999;
     --background-color: #181818;
 
@@ -17,9 +18,28 @@
 
     --btn-background: #252525;
 
+    --theme-icon-fill: #FFC100;
+    --tag-color: #40CF8E;
+
     --color-yellow-muted: #FFC100;
     --color-green-muted: #40CF8E;
 
+}
+
+[data-theme="light"] {
+    --font-color-base: #000;
+    --font-color-alt: #666;
+    --font-color-muted: #999;
+    --background-color: #FFF;
+
+    --border-color: #666;
+    --border-color-hover: #2C2C2C;
+    --border-color-blockquote: #30363D;
+
+    --btn-background: #F6F6F6;
+
+    --theme-icon-fill: #000;
+    --tag-color: #999;
 }
 
 * {
@@ -27,16 +47,14 @@
     padding: 0;
     text-decoration: none;
     font-family: var(--font-family-base);
+    background: var(--background-color);
     color: var(--font-color-base);
 }
 
 html,
 body {
     min-height: 100%;
-}
-
-body {
-    background: var(--background-color);
+    margin: 0;
     background-repeat: no-repeat;
 }
 
@@ -47,6 +65,10 @@ p {
 
 a {
     font-weight: 500;
+}
+
+a:hover {
+    font-weight: 600;
 }
 
 h1 {
@@ -74,9 +96,9 @@ h2 {
 
 .tag {
     font-size: 12px;
-    font-weight: 600;
-    color: var(--color-green-muted);
-    border: 1px solid var(--color-green-muted);
+    font-weight: 700;
+    color: var(--tag-color);
+    border: 1px solid var(--tag-color);
     padding: 3px 6px;
     margin-right: 5px;
     border-radius: 2px;
