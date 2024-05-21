@@ -91,7 +91,11 @@ h2 {
     cursor: pointer;
     width: 32px;
     height: 32px;
-    padding: 2px;
+    filter: opacity(0.5)
+}
+
+.social-icon:hover {
+    filter: opacity(1)
 }
 
 .tag {
