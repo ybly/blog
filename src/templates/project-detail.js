@@ -47,8 +47,8 @@ export default function projectDetails({ data }) {
 	);
 }
 
-export const query = graphql`
-	query ProjectsPage($slug: String) {
+export const pageDetailQuery = graphql`
+	query postsPage($slug: String) {
 		markdownRemark(frontmatter: { slug: { eq: $slug } }) {
 			html
 			frontmatter {

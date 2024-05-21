@@ -6,10 +6,10 @@ import { graphql } from 'gatsby';
 
 import List from '../../components/List';
 
-const groupProjectsByYear = (projects) => {
+const groupProjectsByYear = (posts) => {
 	let datesByYear = {};
 
-	projects.forEach((proj) => {
+	posts.forEach((proj) => {
 		let year = proj.frontmatter.date.split('-')[0];
 
 		if (!datesByYear[year]) {
@@ -47,8 +47,8 @@ export default function Projects({ data }) {
 	);
 }
 
-export const getProjects = graphql`
-	query projectsQuery {
+export const getPosts = graphql`
+	query postQuery {
 		allMarkdownRemark(
 			filter: { frontmatter: { display: { eq: true } } }
 			sort: { frontmatter: { date: DESC } }

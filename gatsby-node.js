@@ -9,7 +9,7 @@ exports.createPages = async ({ graphql, actions }) => {
 	const { createPage } = actions;
 
 	const { data } = await graphql(`
-		query projects {
+		query posts {
 			allMarkdownRemark(filter: { frontmatter: { display: { eq: true } } }) {
 				nodes {
 					frontmatter {

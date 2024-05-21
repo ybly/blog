@@ -53,7 +53,7 @@ A quick look at the top-level files and directories in this project.
 
 - **_`/src/pages/404.js`_**: Customised 404 not found page when an invalid route is attempted.
 
-- **_`/src/projects`_**: This directory contains all the project markdown files which will be used to construct the content for project pages.
+- **_`/src/posts`_**: This directory contains all the project/post markdown files which will be used to construct the content for the template pages.
 
 - **_`/src/styles`_**: This directory contains global and page specific css modules.
 

@@ -9,7 +9,7 @@ import List from '../components/List';
 import { GatsbyLinkButton } from '../components/Button';
 
 export default function Home({ data }) {
-	const projects = data.allMarkdownRemark.nodes;
+	const posts = data.allMarkdownRemark.nodes;
 
 	return (
 		<Layout>
@@ -34,14 +34,14 @@ export default function Home({ data }) {
 					<h2 className="title">Latest Projects</h2>
 					<GatsbyLinkButton to={'/projects'}>view all</GatsbyLinkButton>
 				</div>
-				<List listItems={projects} />
+				<List listItems={posts} />
 			</section>
 		</Layout>
 	);
 }
 
-export const getProjects = graphql`
-	query projectsQuery {
+export const getPosts = graphql`
+	query postQuery {
 		allMarkdownRemark(
 			filter: { frontmatter: { display: { eq: true } } }
 			sort: { frontmatter: { date: DESC } }
