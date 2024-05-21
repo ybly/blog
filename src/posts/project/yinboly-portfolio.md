@@ -24,7 +24,7 @@ A quick look at the top-level files and directories in this project.
     │   │   └── index.js
     │   │   └── 404.js
     │   │   └── ...
-    │   ├── projects/
+    │   ├── posts/
     │   │   └── ...
     │   ├── styles/
     │   │   └── global.css
