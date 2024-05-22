@@ -77,9 +77,17 @@ export default function Layout({ children }) {
 						/>
 					</a>
 				</div>
-				<div>
+				<div className={style.socials}>
 					<div className={style.disclaimer}>
-						<p>© 2024 Yin Bo Ly</p>
+						<p>
+							Copyright &#169; 2024 Yin Bo Ly
+							<span style={{ marginLeft: '5px', marginRight: '5px' }}>
+								&#8901;
+							</span>
+							All rights reserved
+						</p>
+					</div>
+					<div style={{ display: 'inline-flex' }}>
 						<p>
 							Illustrations by{' '}
 							<a
@@ -90,6 +98,7 @@ export default function Layout({ children }) {
 								Storyset
 							</a>
 						</p>
+						<p style={{ marginLeft: '5px', marginRight: '5px' }}>&#8901; </p>
 						<p>
 							Icons by{' '}
 							<a
