@@ -12,4 +12,6 @@ Welcome to my mini projects! This collection features a variety of small, self-c
 
 ## 🌱 Projects
 
-- **_[Toggle themes with CSS](https://ybly.github.io/mini-projects/toggle-themes-css/)_** - A simple interactive CSS project on how to implement a light/dark theme toggle using global variables.
+- **[Toggle themes with CSS](https://ybly.github.io/mini-projects/toggle-themes-css/)** - A simple interactive CSS project on how to implement a light/dark theme toggle using global variables.
+
+- **[Todo App](https://ybly.github.io/mini-projects/todo-app/)** - A basic todo app written in vanilla JS and data persistence using local storage.
