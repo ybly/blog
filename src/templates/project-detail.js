@@ -16,7 +16,7 @@ export default function projectDetails({ data }) {
 
 	return (
 		<Layout>
-			<div className={style.projectDetail}>
+			<div className={style.template}>
 				<section>
 					<div>
 						<h1>{frontmatter.title}</h1>
