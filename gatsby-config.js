@@ -12,6 +12,10 @@ module.exports = {
 		DEV_SSR: true,
 	},
 	plugins: [
+		`gatsby-transformer-remark`,
+		`gatsby-plugin-image`,
+		`gatsby-plugin-sharp`,
+		`gatsby-transformer-sharp`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
@@ -22,7 +26,29 @@ module.exports = {
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				// Add your gatsby-remark-* plugins here
-				plugins: [`gatsby-remark-prismjs`],
+				plugins: [
+					`gatsby-remark-prismjs`,
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 750,
+							showCaptions: false,
+							linkImagesToOriginal: false,
+							withWebp: true,
+							tracedSVG: true,
+							loading: 'lazy',
+							disableBgImageOnAlpha: true,
+							wrapperStyle: (fluidResult) => `flex:${fluidResult.aspectRatio}`,
+						},
+					},
+				],
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `images`,
+				path: `${__dirname}/src/images/`,
 			},
 		},
 		{
