@@ -23,7 +23,7 @@ const groupProjectsByYear = (posts) => {
 };
 
 export default function Projects({ data }) {
-	const projects = data.allMarkdownRemark.nodes;
+	const projects = data.projects.nodes;
 
 	const projectsGroupedByYear = groupProjectsByYear(projects);
 	const years = Object.keys(projectsGroupedByYear).sort((a, b) => b - a);
@@ -47,10 +47,12 @@ export default function Projects({ data }) {
 	);
 }
 
-export const getPosts = graphql`
-	query postQuery {
-		allMarkdownRemark(
-			filter: { frontmatter: { display: { eq: true } } }
+export const getProjects = graphql`
+	query projectsQuery {
+		projects: allMarkdownRemark(
+			filter: {
+				frontmatter: { display: { eq: true }, slug: { regex: "/^/projects/" } }
+			}
 			sort: { frontmatter: { date: DESC } }
 		) {
 			nodes {
