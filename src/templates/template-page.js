@@ -9,6 +9,36 @@ import * as style from './template.module.css';
 
 import { Button } from '../components/Button';
 
+function getOrdinalSuffix(day) {
+	if (day >= 11 && day <= 13) {
+		return 'th';
+	}
+	switch (day % 10) {
+		case 1:
+			return 'st';
+		case 2:
+			return 'nd';
+		case 3:
+			return 'rd';
+		default:
+			return 'th';
+	}
+}
+
+const formatDateString = (dateString) => {
+	const date = new Date(dateString);
+
+	const day = date.getDate();
+	const suffix = getOrdinalSuffix(day);
+
+	const monthAndYearString = date.toLocaleDateString('en-GB', {
+		month: 'long',
+		year: 'numeric',
+	});
+
+	return `${day}${suffix} ${monthAndYearString}`;
+};
+
 export default function projectDetails({ data }) {
 	const { html, frontmatter } = data.markdownRemark;
 
@@ -20,7 +50,7 @@ export default function projectDetails({ data }) {
 				<section>
 					<div>
 						<h1>{frontmatter.title}</h1>
-						<div className={style.technologyStackContainer}>
+						<div className={style.about}>
 							{techStack.map((tech) => {
 								return (
 									<span key={`stack-${tech}`} className="tag">
@@ -28,6 +58,9 @@ export default function projectDetails({ data }) {
 									</span>
 								);
 							})}
+							<span className="date-format">
+								{formatDateString(frontmatter.date)}
+							</span>
 						</div>
 					</div>
 					{frontmatter.githubRepo && (
