@@ -30,13 +30,15 @@ export default function projectDetails({ data }) {
 							})}
 						</div>
 					</div>
-					<Button
-						onClick={() => {
-							window.open(`${frontmatter.githubRepo}`, '_blank');
-						}}
-					>
-						source code
-					</Button>
+					{frontmatter.githubRepo && (
+						<Button
+							onClick={() => {
+								window.open(`${frontmatter.githubRepo}`, '_blank');
+							}}
+						>
+							source code
+						</Button>
+					)}
 				</section>
 
 				<section
@@ -48,8 +50,8 @@ export default function projectDetails({ data }) {
 	);
 }
 
-export const pageDetailQuery = graphql`
-	query postsPage($slug: String) {
+export const postDetailQuery = graphql`
+	query postDetails($slug: String) {
 		markdownRemark(frontmatter: { slug: { eq: $slug } }) {
 			html
 			frontmatter {

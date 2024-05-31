@@ -4,7 +4,7 @@ exports.onPostBuild = ({ reporter }) => {
 	reporter.info(`Your Gatsby site has been built!`);
 };
 
-// Create project pages dynamically from markdown
+// Create pages dynamically from markdown
 exports.createPages = async ({ graphql, actions }) => {
 	const { createPage } = actions;
 
@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
 	data.allMarkdownRemark.nodes.forEach((node) => {
 		createPage({
 			path: `${node.frontmatter.slug}`,
-			component: path.resolve('./src/templates/project-detail.js'),
+			component: path.resolve('./src/templates/template-page.js'),
 			context: {
 				slug: node.frontmatter.slug,
 			},
