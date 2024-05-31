@@ -9,7 +9,8 @@ import List from '../components/List';
 import { GatsbyLinkButton } from '../components/Button';
 
 export default function Home({ data }) {
-	const posts = data.allMarkdownRemark.nodes;
+	const projects = data.projects.nodes;
+	const posts = data.posts.nodes;
 
 	return (
 		<Layout>
@@ -29,23 +30,52 @@ export default function Home({ data }) {
 				/>
 			</section>
 
+			<section style={{ minHeight: 300 }}>
+				<div className={style.homeHeading}>
+					<h2 className="title">Latest Posts</h2>
+					<GatsbyLinkButton to={'/posts'}>view all</GatsbyLinkButton>
+				</div>
+				<List listItems={posts} />
+			</section>
+
 			<section>
 				<div className={style.homeHeading}>
 					<h2 className="title">Latest Projects</h2>
 					<GatsbyLinkButton to={'/projects'}>view all</GatsbyLinkButton>
 				</div>
-				<List listItems={posts} />
+				<List listItems={projects} />
 			</section>
 		</Layout>
 	);
 }
 
-export const getPosts = graphql`
-	query postQuery {
-		allMarkdownRemark(
-			filter: { frontmatter: { display: { eq: true } } }
+export const getPostsAndProjects = graphql`
+	query postsQueryAndProjectsQuery {
+		projects: allMarkdownRemark(
+			filter: {
+				frontmatter: { display: { eq: true }, slug: { regex: "/^/projects/" } }
+			}
 			sort: { frontmatter: { date: DESC } }
 			limit: 6
+		) {
+			nodes {
+				frontmatter {
+					title
+					date
+					slug
+					stack
+					description
+					githubRepo
+				}
+				id
+			}
+		}
+		posts: allMarkdownRemark(
+			filter: {
+				frontmatter: { display: { eq: true }, slug: { regex: "/^/posts/" } }
+			}
+			sort: { frontmatter: { date: DESC } }
+			limit: 10
 		) {
 			nodes {
 				frontmatter {
