@@ -6,10 +6,10 @@ import { graphql } from 'gatsby';
 
 import List from '../../components/List';
 
-const groupProjectsByYear = (projects) => {
+const groupPostsByYear = (posts) => {
 	let datesByYear = {};
 
-	projects.forEach((proj) => {
+	posts.forEach((proj) => {
 		let year = proj.frontmatter.date.split('-')[0];
 
 		if (!datesByYear[year]) {
@@ -22,23 +22,23 @@ const groupProjectsByYear = (projects) => {
 	return datesByYear;
 };
 
-export default function Projects({ data }) {
-	const projects = data.projects.nodes;
+export default function Posts({ data }) {
+	const posts = data.posts.nodes;
 
-	const projectsGroupedByYear = groupProjectsByYear(projects);
-	const years = Object.keys(projectsGroupedByYear).sort((a, b) => b - a);
+	const postsGroupedByYear = groupPostsByYear(posts);
+	const years = Object.keys(postsGroupedByYear).sort((a, b) => b - a);
 
 	return (
 		<Layout>
 			<section>
-				<h1>Projects</h1>
+				<h1>Posts</h1>
 			</section>
 			<div>
 				{years.map((year) => {
 					return (
-						<div key={`${year}-projects`} style={{ marginTop: '4rem' }}>
+						<div key={`${year}-posts`} style={{ marginTop: '4rem' }}>
 							<h2>{year}</h2>
-							<List listItems={projectsGroupedByYear[year]} />
+							<List listItems={postsGroupedByYear[year]} />
 						</div>
 					);
 				})}
@@ -47,11 +47,11 @@ export default function Projects({ data }) {
 	);
 }
 
-export const getProjects = graphql`
-	query projectsQuery {
-		projects: allMarkdownRemark(
+export const getPosts = graphql`
+	query postsQuery {
+		posts: allMarkdownRemark(
 			filter: {
-				frontmatter: { display: { eq: true }, slug: { regex: "/^/projects/" } }
+				frontmatter: { display: { eq: true }, slug: { regex: "/^/posts/" } }
 			}
 			sort: { frontmatter: { date: DESC } }
 		) {
