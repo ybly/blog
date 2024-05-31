@@ -14,7 +14,7 @@ export default function List({ listItems = [] }) {
 						to={item.frontmatter.slug}
 					>
 						<h3>{item.frontmatter.description}</h3>
-						<span className={style.date}>
+						<span className="date-format">
 							{formatDateString(item.frontmatter.date)}
 						</span>
 					</Link>

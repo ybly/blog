@@ -31,12 +31,3 @@
 .listItem:active {
     transform: scale(1);
 }
-
-.date {
-    color: var(--font-color-alt);
-    font-family: var(--font-family-ibm-plex-mono);
-    font-size: 0.9em;
-    font-weight: 500;
-    margin-left: auto;
-    white-space: nowrap;
-}

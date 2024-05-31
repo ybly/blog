@@ -108,6 +108,15 @@ h2 {
     border-radius: 2px;
 }
 
+.date-format {
+    color: var(--font-color-alt);
+    font-family: var(--font-family-ibm-plex-mono);
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
 /* @media screen and (max-width: 700px) { } */
 
 
