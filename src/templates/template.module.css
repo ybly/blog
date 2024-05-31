@@ -1,7 +1,6 @@
-.projectDetail {
-    
+.template {
     min-height: 100vh;
-
+    
     .content {
         margin: 40px auto;
     }
@@ -35,20 +34,22 @@
     a:hover:has(img) {
         background-color: unset;
     }
-
-    .technologyStackContainer {
-        margin: 1rem 0;
-    }
-
+    
     ul, ol {
         padding: 1rem;
     }
-
+    
     blockquote > p {
         margin: 1em 0;
         padding: 0 1em;
         font-weight: 500;
         color: var(--font-color-muted);
         border-left: .25em solid var(--border-color-blockquote);
-      }
+    }
+    
+}
+
+
+.technologyStackContainer {
+    margin: 1rem 0;
 }

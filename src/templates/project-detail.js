@@ -3,8 +3,9 @@ import Layout from '../components/Layout';
 
 import { graphql } from 'gatsby';
 
-import 'prismjs/themes/prism-tomorrow.css';
-import * as style from './project-detail.module.css';
+import 'prismjs/themes/prism-okaidia.css';
+
+import * as style from './template.module.css';
 
 import { Button } from '../components/Button';
 
