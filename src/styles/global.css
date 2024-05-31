@@ -109,3 +109,13 @@ h2 {
 }
 
 /* @media screen and (max-width: 700px) { } */
+
+
+.gatsby-highlight {
+    
+    .token, .token.function, .token.class-name {
+        background: inherit !important;
+    }
+    
+}
+
