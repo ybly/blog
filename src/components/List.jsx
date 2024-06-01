@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import * as style from './list.module.css';
+import * as style from '../styles/list.module.css';
 
 export default function List({ listItems = [] }) {
 	return (

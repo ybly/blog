@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 
-import * as style from './layout.module.css';
+import * as style from '../styles/layout.module.css';
 
 const LIGHT_THEME = 'light';
 const DARK_THEME = 'dark';

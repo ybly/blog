@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import * as style from './button.module.css';
+import * as style from '../styles/button.module.css';
 
 export function Button({ children, onClick = null }) {
 	return (
