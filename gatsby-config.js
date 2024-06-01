@@ -8,7 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-	pathPrefix: '/yinboly.com',
+	pathPrefix: '/gatsby-blog',
 	flags: {
 		DEV_SSR: true,
 	},
