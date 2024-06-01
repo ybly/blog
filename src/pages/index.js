@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, withPrefix } from 'gatsby';
 
 import '../styles/global.css';
 import * as style from '../styles/home.module.css';
@@ -24,7 +24,7 @@ export default function Home({ data }) {
 				</div>
 
 				<img
-					src="/header-image.svg"
+					src={withPrefix('/header-image.svg')}
 					alt="header"
 					style={{ maxWidth: '100%' }}
 				/>

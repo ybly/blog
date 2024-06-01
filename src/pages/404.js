@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 
 import Layout from '../components/Layout';
 import { GatsbyLinkButton } from '../components/Button';
@@ -15,7 +16,7 @@ export default function NotFound() {
 			</div>
 			<div>
 				<img
-					src="/404-error.svg"
+					src={withPrefix('/404-error.svg')}
 					alt="404 Error"
 					style={{ maxWidth: '100%' }}
 				/>

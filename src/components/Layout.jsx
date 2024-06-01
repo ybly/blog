@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { Link, withPrefix } from 'gatsby';
 
 import * as style from '../styles/layout.module.css';
 
@@ -61,7 +61,7 @@ export default function Layout({ children }) {
 					>
 						<img
 							className="social-icon"
-							src="/icons8-linkedin.svg"
+							src={withPrefix("/icons8-linkedin.svg")}
 							alt="icon-linkedin"
 						/>
 					</a>
@@ -72,7 +72,7 @@ export default function Layout({ children }) {
 					>
 						<img
 							className="social-icon"
-							src="/icons8-github.svg"
+							src={withPrefix("/icons8-github.svg")}
 							alt="icon-github"
 						/>
 					</a>
