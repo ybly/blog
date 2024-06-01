@@ -8,8 +8,6 @@ githubRepo: 'https://github.com/ybly/gatsby-blog'
 display: true
 ---
 
-# [gatsby-blog](https://ybly.github.io/gatsby-blog) 
-
 My personal blog and project portfolio! This site uses Gatsby and React to ensure a lightning-fast, seamless user experience. By leveraging Gatsby’s static site generation and React’s component-based architecture.
 
 
@@ -20,6 +18,9 @@ A quick look at the top-level files and directories in this project.
     .
     ├── src/
     │   ├── components/
+    │   │    └── ...
+    │   ├──images/
+    │   │   └── image.png
     │   │    └── ...
     │   ├──pages/
     │   │   └── index.js
@@ -47,6 +48,10 @@ A quick look at the top-level files and directories in this project.
 - **_`/src`_**: This directory will contain all of the code related to what you see on the site's front end.
 
 - **_`/src/components`_**: This directory will contain all the react components used in the front end.
+
+- **_`/src/images`_**: This directory will contain all images the site requires.
+
+  > We use the `gatsby-plugin-image` with the `gatsby-plugin-sharp` and `gatsby-transformer-sharp` plugins to optimize image loading based on device and viewport requirements.
 
 - **_`/src/pages`_**: This directory contains all the individual pages for the website.
 
@@ -80,3 +85,5 @@ A quick look at the top-level files and directories in this project.
 - **`gatsby-remark-prismjs`**: Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://prismjs.com/).
 
 - **`gatsby-plugin-manifest`**: The manifest provides configuration and icons.
+
+- **`gatsby-plugin-image`**: The Gatsby Image plugin handles the hard parts of producing images in multiple sizes and formats to optimize image loading and performance.
