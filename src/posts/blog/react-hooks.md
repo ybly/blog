@@ -12,7 +12,7 @@ display: true
 
 React Hooks are functions introduced in React 16.8 that allow function components to "hook" into React’s lifecycle and state. Before hooks, only class-based components could access these features. Hooks enable function components to use state and lifecycle methods, simplifying component logic and improving code readability and reusability.
 
-Before we dive into the different react hooks available and how they work its important to understand [React class components and how they work](/posts/react-lifecycle).
+Before we explore the different React hooks available, it's important to understand [React class components and how they work](/posts/react-lifecycle).
 
 ## State Hooks
 
