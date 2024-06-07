@@ -82,9 +82,9 @@ A quick look at the top-level files and directories in this project.
 
 ## 🎓 Learning Gatsby
 
-In-depth _[tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/)_ for creating a site with Gatsby. Full documentation for Gatsby can be found on [gatsbyjs.com](https://www.gatsbyjs.com/).
-
 This site was built using the _[gatsby-starter-hello-world](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world/)_ template.
+
+In-depth _[tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/)_ for creating a site with Gatsby. Full documentation for Gatsby can be found on [gatsbyjs.com](https://www.gatsbyjs.com/).
 
    ```shell
    # create a new Gatsby site using the hello-world starter
