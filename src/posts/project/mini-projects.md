@@ -8,7 +8,7 @@ githubRepo: 'https://github.com/ybly/mini-projects'
 display: true
 ---
 
-Welcome to my mini projects! This collection features a variety of small, self-contained projects designed to explore different programming concepts, tools, and technologies.
+This collection features a variety of small, self-contained HTML, JavaScript, and CSS projects designed to explore different concepts, tools, and techniques in web development.
 
 ## 🌱 Projects
 
