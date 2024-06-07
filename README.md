@@ -1,7 +1,4 @@
-# [gatsby-blog](https://ybly.github.io/gatsby-blog) 
-
-Personal blog and project portfolio! This site uses Gatsby and React to ensure a lightning-fast, seamless user experience by leveraging Gatsby’s static site generation to create pages from markdown files based on React component templates.
-
+Personal blog site built using Gatsby and React, leveraging Gatsby's static site generation to create pages from Markdown files. The site utilizes React and GraphQL for dynamic content and efficient data management.
 
 ## ⚙️ What's inside?
 
