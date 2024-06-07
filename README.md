@@ -1,4 +1,4 @@
-Personal blog site built using Gatsby and React, leveraging Gatsby's static site generation to create pages from Markdown files. The site utilizes React and GraphQL for dynamic content and efficient data management.
+Personal blog site built using Gatsby and React, leveraging Gatsby's static site generation to create pages from Markdown files. The site utilizes React and GraphQL to render dynamic content.
 
 ## ⚙️ What's inside?
 
