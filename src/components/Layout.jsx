@@ -35,9 +35,10 @@ export default function Layout({ children }) {
 							Github
 						</a>
 					</div>
-					<button
+					<button 
 						title="toggle theme"
 						type="button"
+						aria-label="theme toggle"
 						className={style.themeButton}
 						onClick={toggleTheme}
 					>
