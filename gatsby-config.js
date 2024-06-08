@@ -61,8 +61,8 @@ module.exports = {
 		},
 	],
 	siteMetadata: {
-		title: "Bo's personal portfolio",
-		description: 'Software developer portfolio',
+		title: 'Gatsby Blog',
+		description: 'Gatsby Blog Site',
 		author: 'Yin Bo Ly',
 	},
 	trailingSlash: 'never',
